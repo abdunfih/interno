@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Portfolio Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/swiper/8.4.7/swiper-bundle.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Jost:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <header id="navbar" class="fixed w-full top-0 left-0 z-50 text-black bg-white shadow-md">
+        <nav class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 sm:h-20">
+            <!-- Logo -->
+            <a href="#" class="text-black">
+                <img src="assets/assets/logo.svg " alt="">
+            </a>
+
+            <!-- Navigation Menu -->
+            <div id="nav-menu" class="absolute top-0 left-[-100%] min-h-[80vh]
+             w-full bg-[#F8F8F8] bg-opacity-30 backdrop-blur-sm flex items-center 
+             justify-center transition-all duration-300 lg:static lg:min-h-fit
+             lg:bg-transparent lg:w-auto lg:left-0">
+
+                <ul class="flex flex-col items-center gap-8 lg:flex-row text-black">
+                    <li><a href="#home" class="text-lg font-semibold duration-300 hover:text-[#bb7f43]">Home</a></li>
+                    <li><a href="#about" class="text-lg font-semibold duration-300 hover:text-[#df9348]">About</a></li>
+                    <li><a href="#education"
+                            class="text-lg font-semibold duration-300 hover:text-[#df9348]">Education</a></li>
+                    <li><a href="#projects" class="text-lg font-semibold duration-300 hover:text-[#df9348]">Projects</a>
+                    </li>
+                    <li><a href="#contact" class="text-lg font-semibold duration-300 hover:text-[#df9348]">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Hamburger Icon for Mobile -->
+            <div class="text-3xl cursor-pointer z-50 lg:hidden">
+                <i class="ri-menu-4-line" id="hamburger"></i>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative min-h-screen w-full overflow-hidden">
+        <!-- Parallax Background -->
+        <div class="absolute inset-0 opacity-80 bg-no-repeat bg-cover bg-fixed bg-center rounded-bl-[200px] md:rounded-bl-[300px] z-0"
+            style="background-image: url('assets/assets/hero/bg.jpg');"></div>
+
+        <!-- Hero Content Container -->
+        <div class="relative z-10 container mx-auto px-4 sm:px-6 h-screen">
+            <div class="flex flex-col justify-center h-full max-w-2xl pt-16 md:pt-0">
+                <h1 class="light-text text-4xl lg:text-6xl font-bold leading-tight text-gray-800">
+                    Let's Create Your<br>Dream Interior
+                </h1>
+
+                <p class="mt-4 text-xl  text-gray-700 font-semibold">
+                    The world needs innovators and problem solvers who turn challenges into greater opportunities.
+                </p>
+
+                <a href="#" class="mt-6 items-center px-8  py-4 bg-gray-800
+                 text-white font-semibold text-base sm:text-lg rounded-xl 
+                    shadow-md w-fit">
+                    Get Started
+                    <i class="ml-2 ri-arrow-right-line text-[#bb7c3e]"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="relative py-40 px-4 bg-gray-100">
+        <div class="max-w-6xl mx-auto">
+            <!-- Grid Container -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
+                <!-- Card Component -->
+                <div class="group flex flex-col items-center text-center p-8 h-full shadow-2xl rounded-xl">
+                    <h3 class="light-text text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+                        Interior Design
+                    </h3>
+                    <p class="text-gray-600 mb-6 max-w-sm">
+                        Enhancing the interior to achieve a healthier environment for the people using the right space.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center text-gray-800 font-medium hover:text-[#bb7c3e] transition-colors">
+                        View More
+                        <i
+                            class="ml-2 ri-arrow-right-line text-[#bb7c3e] group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="group flex flex-col items-center text-center p-8 h-full shadow-2xl rounded-xl">
+                    <h3 class="light-text text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+                        Furniture
+                    </h3>
+                    <p class="text-gray-600 mb-6 max-w-sm">
+                        Movable articles that are used to make a room or building suitable for living or working.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center text-gray-800 font-medium hover:text-[#bb7c3e] transition-colors">
+                        View More
+                        <i
+                            class="ml-2 ri-arrow-right-line text-[#bb7c3e] group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+
+                <div class="group flex flex-col items-center text-center p-8 h-full shadow-2xl rounded-xl">
+                    <h3 class="light-text text-xl md:text-3xl font-semibold text-gray-800 mb-4">
+                        Flooring
+                    </h3>
+                    <p class="text-gray-600 mb-6 max-w-sm">
+                        Thin object any finished material applied over a floor structure to provide a walking surface.
+                    </p>
+                    <a href="#"
+                        class="inline-flex items-center text-gray-800 font-medium hover:text-[#bb7c3e] transition-colors">
+                        View More
+                        <i
+                            class="ml-2 ri-arrow-right-line text-[#bb7c3e] group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <section id="About" class="py-12 px-6 bg-gray-100">
+        <div class="relative w-full overflow-hidden min-h-[70vh]">
+            <div class="flex flex-col items-center gap-8 lg:gap-12 lg:flex-row mb-5 max-w-6xl mx-auto">
+
+                <!-- Image Section -->
+                <div class="about_img w-full relative lg:w-1/2 order-1 lg:order-2">
+                    <img src="assets/assets/about/img.png" alt="About Image" class="rounded-lg shadow-lg w-full">
+                </div>
+
+                <!-- Text Content Section -->
+                <div class="about_text w-full space-y-6 lg:w-1/2 order-2 lg:order-1 text-center lg:text-left">
+                    <h1 class="light-text text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight text-gray-800">
+                        We Create The Art <br> Of Stylish Living <br> Stylishly
+                    </h1>
+                    <p class="text-lg sm:text-xl text-gray-700 font-semibold">
+                        It is a long established fact that a reader will be distracted by readable content when looking
+                        at its layout.
+                    </p>
+
+                    <!-- Flex Container -->
+                    <div class="flex flex-col sm:flex-row items-center sm:items-start gap-4 md:gap-6">
+                        <!-- Icon Container -->
+                        <div
+                            class="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-[#bb7c3e] bg-opacity-25 flex items-center justify-center">
+                            <i class="ri-phone-line text-[#bb7c3e] text-2xl sm:text-3xl"></i>
+                        </div>
+                        <!-- Text Content -->
+                        <div class="text-center sm:text-left">
+                            <a href="tel:+1372323791"
+                                class="font-bold text-base sm:text-lg md:text-xl text-gray-800 hover:text-[#bb7c3e] transition-colors block">
+                                (372) 323-791
+                            </a>
+                            <p class="text-sm sm:text-base md:text-lg text-gray-600">Call Us Anytime</p>
+                        </div>
+                    </div>
+
+
+                    <!-- Button -->
+                    <a href="#"
+                        class="inline-flex items-center px-6 py-4 bg-gray-800 text-white font-semibold text-lg rounded-xl shadow-md hover:bg-gray-700 transition">
+                        Get Free Estimate
+                        <i class="ml-2 ri-arrow-right-line text-[#bb7c3e]"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="relative px-6">
+        <div class=" max-w-6xl mx-auto px-4   md:px-8 min-h-[500px] bg-[#bb7c3e] rounded-3xl bg-opacity-25">
+            <h2 class="text-3xl md:text-4xl font-serif text-center text-[#292F36] mb-10 pt-10">
+                What the People Think<br>About Interno
+            </h2>
+
+            <div class="swiper testimonialSwiper mt-10">
+                <div class="swiper-wrapper pb-12">
+                    <!-- Slide 1 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/assets/testimonial/01.png" alt="Lisa Clairton"
+                                    class="w-14 h-14 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-semibold text-[#292F36]">Lisa Clairton</h3>
+                                    <p class="text-sm text-[#4D5053]">New York, USA</p>
+                                </div>
+                            </div>
+                            <p class="text-[#4D5053]">We selected Interno interior because of rigorous design background
+                                & education.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 2 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/assets/testimonial/02.png" alt="David Knight"
+                                    class="w-14 h-14 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-semibold text-[#292F36]">David Knight</h3>
+                                    <p class="text-sm text-[#4D5053]">Sydney, Australia</p>
+                                </div>
+                            </div>
+                            <p class="text-[#4D5053]">The team exceeded our expectations and emerged as leaders of our
+                                project.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 3 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/assets/testimonial/03.png" alt="Lisa Clairton"
+                                    class="w-14 h-14 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-semibold text-[#292F36]">Lisa Clairton</h3>
+                                    <p class="text-sm text-[#4D5053]">Paris, France</p>
+                                </div>
+                            </div>
+                            <p class="text-[#4D5053]">They balanced the architectural vision and the project realities
+                                beautifully.</p>
+                        </div>
+                    </div>
+
+                    <!-- Slide 4 -->
+                    <div class="swiper-slide">
+                        <div class="bg-white rounded-xl p-6 shadow-lg">
+                            <div class="flex items-center mb-4">
+                                <img src="assets/assets/testimonial/04.png" alt="Lisa Clairton"
+                                    class="w-14 h-14 rounded-full mr-4">
+                                <div>
+                                    <h3 class="font-semibold text-[#292F36]">Lisa Clairton</h3>
+                                    <p class="text-sm text-[#4D5053]">Paris, France</p>
+                                </div>
+                            </div>
+                            <p class="text-[#4D5053]">They balanced the architectural vision and the project realities
+                                beautifully.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Swiper Pagination -->
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Brands Section -->
+    <section class="py-16 md:py-16" aria-label="Our Trusted Partners">
+        <div class="container mx-auto px-4 md:px-6">
+            <!-- Brands Grid Container -->
+            <div class="grid brands-grid place-items-center gap-8 md:gap-12 max-w-6xl mx-auto">
+                <!-- Brand Logo 1 -->
+                <a href="#" class="brand-logo" aria-label="Brand Partner 1">
+                    <img src="assets/assets/brands/01.svg" alt="Brand Logo 1" class="w-20 md:w-24 h-auto object-contain"
+                        loading="lazy">
+                </a>
+
+                <!-- Brand Logo 2 -->
+                <a href="#" class="brand-logo" aria-label="Brand Partner 2">
+                    <img src="assets/assets/brands/02.svg" alt="Brand Logo 2" class="w-20 md:w-24 h-auto object-contain"
+                        loading="lazy">
+                </a>
+
+                <!-- Brand Logo 3 -->
+                <a href="#" class="brand-logo" aria-label="Brand Partner 3">
+                    <img src="assets/assets/brands/03.svg" alt="Brand Logo 3" class="w-20 md:w-24 h-auto object-contain"
+                        loading="lazy">
+                </a>
+
+                <!-- Brand Logo 4 -->
+                <a href="#" class="brand-logo" aria-label="Brand Partner 4">
+                    <img src="assets/assets/brands/04.svg" alt="Brand Logo 4" class="w-20 md:w-24 h-auto object-contain"
+                        loading="lazy">
+                </a>
+
+                <!-- Brand Logo 5 -->
+                <a href="#" class="brand-logo" aria-label="Brand Partner 5">
+                    <img src="assets/assets/brands/05.svg" alt="Brand Logo 5" class="w-20 md:w-24 h-auto object-contain"
+                        loading="lazy">
+                </a>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/swiper/8.4.7/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+
+</body>
+
+</html>

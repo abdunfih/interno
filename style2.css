@@ -1,0 +1,74 @@
+     /* Scroll-to-Top Button Hidden Initially */
+     #scroll-up {
+         display: none;
+     }
+
+     .parallax {
+         background-attachment: scroll;
+         /* Change from fixed for better mobile support */
+     }
+
+     @media (max-width: 768px) {
+         .parallax {
+             background-size: cover;
+             background-position: center;
+         }
+     }
+
+     /* Parallax Effect */
+     .parallax {
+         background-attachment: fixed;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+     }
+
+     /* Custom Fade-in Animation */
+     @keyframes fadeIn {
+         from {
+             opacity: 0;
+             transform: translateY(20px);
+         }
+
+         to {
+             opacity: 1;
+             transform: translateY(0);
+         }
+     }
+
+     .fade-in {
+         animation: fadeIn 1.5s ease-out;
+     }
+
+     /* Apply DM Serif Display to headings */
+     .light-text {
+         font-family: 'DM Serif Display', serif;
+         font-weight: normal;
+     }
+
+
+     /* swiper */
+
+     .swiper-container {
+         position: relative;
+         padding-bottom: 60px !important;
+     }
+
+     .swiper-pagination {
+         position: absolute;
+         bottom: 0 !important;
+     }
+
+     .swiper-pagination-bullet {
+         width: 10px;
+         height: 10px;
+         background: #000000 !important;
+         /* Changed to black */
+         opacity: 0.2;
+     }
+
+     .swiper-pagination-bullet-active {
+         opacity: 1;
+         background: #000000 !important;
+         /* Changed to black */
+     }
