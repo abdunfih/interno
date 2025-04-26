@@ -18,14 +18,14 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100">
+<body class="bg-white">
 
     <!-- Navbar -->
     <header id="navbar" class="fixed w-full top-0 left-0 z-50 text-black bg-white shadow-md">
         <nav class="max-w-7xl mx-auto px-6 flex items-center justify-between h-16 sm:h-20">
             <!-- Logo -->
-            <a href="#" class="text-black">
-                <img src="assets/assets/logo.svg " alt="">
+            <a href="#" class="text-3xl">
+                <img src="assets/assets/logo.svg " alt="logo">
             </a>
 
             <!-- Navigation Menu -->
@@ -81,7 +81,7 @@
     </section>
 
     <!-- Services Section -->
-    <section class="relative py-40 px-4 bg-gray-100">
+    <section class="relative py-40 px-4 ">
         <div class="max-w-6xl mx-auto">
             <!-- Grid Container -->
             <div class="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12">
@@ -136,7 +136,7 @@
 
 
 
-    <section id="About" class="py-12 px-6 bg-gray-100">
+    <section id="About" class="py-12 px-6 ">
         <div class="relative w-full overflow-hidden min-h-[70vh]">
             <div class="flex flex-col items-center gap-8 lg:gap-12 lg:flex-row mb-5 max-w-6xl mx-auto">
 
@@ -264,46 +264,229 @@
         </div>
     </section>
 
-
     <!-- Brands Section -->
-    <section class="py-16 md:py-16" aria-label="Our Trusted Partners">
+    <section class="py-20 md:py-16">
         <div class="container mx-auto px-4 md:px-6">
             <!-- Brands Grid Container -->
-            <div class="grid brands-grid place-items-center gap-8 md:gap-12 max-w-6xl mx-auto">
-                <!-- Brand Logo 1 -->
-                <a href="#" class="brand-logo" aria-label="Brand Partner 1">
-                    <img src="assets/assets/brands/01.svg" alt="Brand Logo 1" class="w-20 md:w-24 h-auto object-contain"
-                        loading="lazy">
-                </a>
+            <div class="flex flex-wrap justify-center items-center gap-14 md:gap-12 max-w-6xl mx-auto">
+                <!-- Brand Logos -->
+                <img src="assets/assets/brands/01.svg" class="w-24 sm:w-20 md:w-24 h-auto object-contain"
+                    loading="lazy">
 
-                <!-- Brand Logo 2 -->
-                <a href="#" class="brand-logo" aria-label="Brand Partner 2">
-                    <img src="assets/assets/brands/02.svg" alt="Brand Logo 2" class="w-20 md:w-24 h-auto object-contain"
-                        loading="lazy">
-                </a>
+                <img src="assets/assets/brands/03.svg" class="w-32 sm:w-20 md:w-24 h-auto object-contain"
+                    loading="lazy">
 
-                <!-- Brand Logo 3 -->
-                <a href="#" class="brand-logo" aria-label="Brand Partner 3">
-                    <img src="assets/assets/brands/03.svg" alt="Brand Logo 3" class="w-20 md:w-24 h-auto object-contain"
-                        loading="lazy">
-                </a>
+                <img src="assets/assets/brands/04.svg" class="w-16 sm:w-20 md:w-24 h-auto object-contain"
+                    loading="lazy">
 
-                <!-- Brand Logo 4 -->
-                <a href="#" class="brand-logo" aria-label="Brand Partner 4">
-                    <img src="assets/assets/brands/04.svg" alt="Brand Logo 4" class="w-20 md:w-24 h-auto object-contain"
-                        loading="lazy">
-                </a>
+                <img src="assets/assets/brands/05.svg" class="w-16 sm:w-20 md:w-24 h-auto object-contain"
+                    loading="lazy">
 
-                <!-- Brand Logo 5 -->
-                <a href="#" class="brand-logo" aria-label="Brand Partner 5">
-                    <img src="assets/assets/brands/05.svg" alt="Brand Logo 5" class="w-20 md:w-24 h-auto object-contain"
-                        loading="lazy">
-                </a>
+                <img src="assets/assets/brands/02.svg" class="w-16 sm:w-20 md:w-24 h-auto object-contain"
+                    loading="lazy">
             </div>
         </div>
     </section>
 
+    <div class="w-full max-w-6xl px-4 mx-auto py-20">
 
+        <!-- Header -->
+        <div class="text-center mb-12">
+            <h1 class="light-text text-4xl lg:text-5xl font-bold leading-tight text-gray-800">Follow Our Projects</h1>
+            <p class="mt-4 text-base text-gray-600">
+                It is a long established fact that a reader will be distracted by the readable <br>
+                content of a page while looking at its layout and design.
+            </p>
+        </div>
+
+        <!-- Project Grid -->
+        <div class="grid gap-8 md:grid-cols-2">
+
+            <!-- Card 1 -->
+            <div class="p-5 bg-white rounded-xl shadow-lg">
+                <img src="assets/assets/work/03.png" alt="Modern Kitchen" class="w-full rounded-lg mb-4">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="light-text text-xl text-gray-800">Modern Kitchen</h2>
+                        <p class="text-sm text-gray-500">Decor / Architecture</p>
+                    </div>
+                    <button
+                        class="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-[#bb7c3e]/25 flex items-center justify-center">
+                        <i class="ri-arrow-right-s-line text-2xl text-[#000]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="p-5 bg-white rounded-xl shadow-lg">
+                <img src="assets/assets/work/04.png" alt="Modern Living Room" class="w-full rounded-lg mb-4">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="light-text text-xl text-gray-800">Modern Living Room</h2>
+                        <p class="text-sm text-gray-500">Decor / Architecture</p>
+                    </div>
+                    <button
+                        class="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-[#bb7c3e]/25 flex items-center justify-center">
+                        <i class="ri-arrow-right-s-line text-2xl text-[#000]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="p-5 bg-white rounded-xl shadow-lg">
+                <img src="assets/assets/work/01.png" alt="Workspace Interior" class="w-full rounded-lg mb-4">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="light-text text-xl text-gray-800">Workspace Interior</h2>
+                        <p class="text-sm text-gray-500">Decor / Architecture</p>
+                    </div>
+                    <button
+                        class="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-[#bb7c3e]/25 flex items-center justify-center">
+                        <i class="ri-arrow-right-s-line text-2xl text-[#000]"></i>
+                    </button>
+                </div>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="p-5 bg-white rounded-xl shadow-lg">
+                <img src="assets/assets/work/02.png" alt="Interior Design" class="w-full rounded-lg mb-4">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <h2 class="light-text text-xl text-gray-800">Interior Design</h2>
+                        <p class="text-sm text-gray-500">Decor / Architecture</p>
+                    </div>
+                    <button
+                        class="h-12 w-12 sm:h-16 sm:w-16 rounded-full bg-[#bb7c3e]/25 flex items-center justify-center">
+                        <i class="ri-arrow-right-s-line text-2xl text-[#000]"></i>
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <section class="bg-[#f5f2ee] py-20">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Changed to responsive grid: 1 column on mobile, 2 on small screens, 4 on medium screens -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 text-center">
+                <!-- Years of Experience -->
+                <div class="px-4 py-6 border-b sm:border-b md:border-b-0 sm:border-r border-[#fdaf55]">
+                    <h2 class="light-text text-4xl lg:text-6xl font-semibold text-[#bb7c3e]">12</h2>
+                    <p class="mt-2 text-gray-700 text-sm md:text-base">Years Of Experience</p>
+                </div>
+
+                <!-- Projects Completed -->
+                <div class="px-4 py-6 border-b md:border-b-0 md:border-r border-[#fdaf55]">
+                    <h2 class="light-text text-4xl lg:text-6xl font-semibold text-[#bb7c3e]">85</h2>
+                    <p class="mt-2 text-gray-700 text-sm md:text-base">Projects Completed</p>
+                </div>
+
+                <!-- Active Projects -->
+                <div class="px-4 py-6 border-b sm:border-b md:border-b-0 sm:border-r border-[#fdaf55]">
+                    <h2 class="light-text text-4xl lg:text-6xl font-semibold text-[#bb7c3e]">15</h2>
+                    <p class="mt-2 text-gray-700 text-sm md:text-base">Active Projects</p>
+                </div>
+
+                <!-- Happy Customers -->
+                <div class="px-4 py-6">
+                    <h2 class="light-text text-4xl lg:text-6xl font-semibold text-[#bb7c3e]">95</h2>
+                    <p class="mt-2 text-gray-700 text-sm md:text-base">Happy Customers</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="relative px-4 sm:px-6 py-12 sm:py-20">
+        <div
+            class="max-w-6xl mx-auto text-center min-h-[250px] sm:min-h-[300px] bg-gray-800 rounded-3xl px-4 sm:px-8 py-12 sm:py-16 flex flex-col items-center justify-center">
+            <h2 class="text-3xl sm:text-3xl md:text-4xl font-serif text-white mb-4 sm:mb-5">
+                Do You Want To Join Interno?
+            </h2>
+
+            <p class="text-lg text-white mb-8 sm:mb-10 sm:text-sm mx-auto">
+                It is a long established fact will be distracted
+            </p>
+
+            <a href="#" class="inline-flex items-center px-6 sm:px-8 py-3 sm:py-4 bg-[#c58f59]
+                 text-white font-semibold text-sm sm:text-base md:text-lg rounded-xl 
+                    shadow-md hover:bg-[#b47e48] transition-colors">
+                Get Started
+                <i class="ml-2 ri-arrow-right-line text-black"></i>
+            </a>
+        </div>
+    </section>
+
+    <footer class="bg-gray-100 py-12 px-4 sm:px-6 lg:px-8">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <!-- Logo and Description -->
+            <div class="mb-8 md:mb-0">
+                <div class="flex items-center mb-4">
+                    <a href="#" class="text-3xl">
+                        <img src="assets/assets/logo.svg " alt="logo">
+                    </a>
+                </div>
+                <p class="text-gray-600 mb-6">It is a long established fact that a reader will be distracted lookings.
+                </p>
+
+                <!-- Social Icons -->
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-500 hover:text-gray-800">
+                        <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+                            <i class="ri-facebook-fill"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800">
+                        <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+                            <i class="ri-twitter-x-line"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800">
+                        <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+                            <i class="ri-linkedin-fill"></i>
+                        </span>
+                    </a>
+                    <a href="#" class="text-gray-500 hover:text-gray-800">
+                        <span class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-sm">
+                            <i class="ri-instagram-line"></i>
+                        </span>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Pages Column -->
+            <div class="mb-8 md:mb-0">
+                <h3 class="light-text text-xl font-semibold text-gray-800 mb-6">Pages</h3>
+                <ul class="space-y-4">
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">About Us</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Testimonials</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Our Work</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">News</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Services Column -->
+            <div class="mb-8 md:mb-0">
+                <h3 class="light-text text-xl font-semibold text-gray-800 mb-6">Services</h3>
+                <ul class="space-y-4">
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Kitchen</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Living Area</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Bathroom</a></li>
+                    <li><a href="#" class="text-gray-600 hover:text-gray-900">Bedroom</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Column -->
+            <div>
+                <h3 class="light-text text-xl font-semibold text-gray-800 mb-6">Contact</h3>
+                <p class="text-gray-600 mb-2">55 East Birchwood Ave.</p>
+                <p class="text-gray-600 mb-4">Brooklyn, New York 11201</p>
+
+                <p class="text-gray-600 mb-2">contact@interno.com</p>
+                <p class="text-gray-600">(123) 456 - 7890</p>
+            </div>
+        </div>
+    </footer>
 
     <!-- Scripts -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/swiper/8.4.7/swiper-bundle.min.js"></script>
